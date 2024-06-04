@@ -98,13 +98,13 @@
                 <h1 id="installation-de-k3s">Installation de K3S</h1>
 <p>L'installation de K3S est incroyablement simple.</p>
 <h2 id="1-mise-a-jour-du-systeme">1. Mise à jour du système</h2>
-<pre><code class="language-console">sudo apt update &amp;&amp; sudo apt upgrade -y
+<pre><code class="language-console">apt update &amp;&amp; sudo apt upgrade -y
 </code></pre>
 <h2 id="2-installation-de-k3s">2. Installation de K3S</h2>
 <pre><code class="language-console">curl -sfL https://get.k3s.io | sh -
 </code></pre>
 <p>Vous pouvez vérifier le statut du service K3S avec la commande suivante :</p>
-<pre><code class="language-console">sudo systemctl status k3s
+<pre><code class="language-console">systemctl status k3s
 </code></pre>
 <p>Son statut doit être à <code>Active: active (running)</code></p>
 <h2 id="3-configuration-de-kubectl">3. Configuration de kubectl</h2>
